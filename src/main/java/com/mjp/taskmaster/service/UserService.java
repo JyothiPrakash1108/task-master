@@ -31,6 +31,6 @@ public class UserService {
         user.setEmail(email);
         user.setUsername(username);
         user.setPassword(passwordEncoder.encode(password));
-        userRepo.save(user);
+        return userRepo.save(user);
     }
 }
